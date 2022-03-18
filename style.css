@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    background-color: #dfdfdf;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.clear-fix {
+    zoom: 1;
+}
+
+.clear-fix::after {
+    content: " ";
+    display: table;
+    clear: both;
+    visibility: hidden;
+
+}
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+/* Nav Menu Start */
+#nav-bar {
+    list-style-type: none;
+    /* margin-top: 50px; */
+    padding-top: 50px;
+    float: right;
+    margin-bottom: 50px;
+    top: 0;
+    width: 100%;
+    background-color: #dfdfdf;
+    position: fixed;
+
+}
+
+#nav-bar li {
+    display: block;
+    margin-right: 60px;
+    float: right;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+#nav-bar li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+
+}
+
+#header-img {
+    height: 40px;
+    width: 20%;
+    float: left;
+    margin-left: 50px;
+    border-radius: 200px;
+    margin-bottom: 10px;
+}
+
+/* Nav Menu Ending */
+
+#features {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    /* padding: 30px 30px; */
+}
+
+.item {
+    display: flex;
+    
+}
+
+.icon {
+    font-size: 60px;
+    color: rgb(182, 182, 22);
+    margin: 30px;
+    float: left;
+}
+
+.text {
+    font-size: 18px;
+    margin: 30px;
+    float: right;
+}
+
+
+
+/* Second field Starting */
+
+#main h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+form {
+    text-align: center;
+    margin-top: 150px;
+}
+
+input[type=email] {
+    width: 20%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#submit {
+    background-color: rgb(209, 209, 21);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#submit:hover {
+    background-color: rgb(133, 133, 25);
+}
+/* Second field ending */
+/* Video starting */
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+/* Video Ending */
+
+/* Pricing Section */
+
+#pricing {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    float: left;
+    margin: 35px;
+    padding: 0px 0px 40px 0;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.card li {
+    padding: 10px 50px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(209, 209, 21);
+    border: none;
+    margin: 10px;
+}
+
+.card h1 {
+    padding: 20px;
+}
+
+.h {
+    background-color: #555;
+    padding: 20px 35px;
+    width: 100%;
+    display: block;
+}
+
+.last-section {
+    margin-top: 25px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 15px;
+    background-color: #555;
+}
+
+.last-section li {
+    float: right;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.last-section p {
+    padding: 0;
+    float: right;
+}
+
+
+
+
+
+@media only screen and (max-width:480px) {
+
+    #pricing, #nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-bar img{
+        width: 80%;
+        padding-right: 60px;
+    }
+    #nav-bar{
+        width: 100%;
+        margin-top: 0px;
+        padding-top: 5px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #listed-items {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #listed-items li {
+        text-align: center;
+        padding: 10px 0px 10px 40px;
+
+    }
+
+    #form {
+        padding-top: 70px;
+    }
+
+    input[type=email]{
+        width: 50%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .last-section p {
+        padding: 10px 0px 10px 250px;
+        float: right;
+    }
+
+    #video {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .card {
+        box-shadow: 1px 10px 9px -4px rgba(0,0,0,0.75);
+    }
+
+    .last-section p {
+        float: right;
+    }
+}
